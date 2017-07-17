@@ -182,3 +182,156 @@ go
 print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Default [df_test_log_log_create_date] has been added to [dbo].[test_log].'
 go
 ```
+
+## Functions
+```sql
+if exists (select 1 where objectproperty( object_id('[dbo].[test_parent_get_parent_id]'), 'IsScalarFunction') = 1)
+begin
+	drop function [dbo].[test_parent_get_parent_id]
+	print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Scalar Function [dbo].[test_parent_get_parent_id] has been dropped.'
+end
+go
+
+create function [dbo].[test_parent_get_parent_id]
+(
+	@parent_uid uniqueidentifier 
+)
+returns int
+as 
+begin
+	return 
+	(	select	tc.parent_id
+		from	[dbo].[test_parent] tc
+		where	tc.parent_uid = @parent_uid
+	)
+end
+go
+print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Scalar Function [dbo].[test_parent_get_parent_id] has been created.'
+go
+
+if exists (select 1 where objectproperty( object_id('[dbo].[test_child_get_child_id]'), 'IsScalarFunction') = 1)
+begin
+	drop function [dbo].[test_child_get_child_id]
+	print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Scalar Function [dbo].[test_child_get_child_id] has been dropped.'
+end
+go
+
+create function [dbo].[test_child_get_child_id]
+(
+	@child_uid uniqueidentifier 
+)
+returns int
+as 
+begin
+	return 
+	(	select	tc.child_id
+		from	[dbo].[test_child] tc
+		where	tc.child_uid = @child_uid
+	)
+end
+go
+print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Scalar Function [dbo].[test_child_get_child_id] has been created.'
+go
+
+if exists (select 1 where objectproperty( object_id('[dbo].[test_parent_get_child_qty]'), 'IsScalarFunction') = 1)
+begin
+	drop function [dbo].[test_parent_get_child_qty]
+	print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Scalar Function [dbo].[test_parent_get_child_qty] has been dropped.'
+end
+go
+
+create function [dbo].[test_parent_get_child_qty]
+(
+	@parent_uid uniqueidentifier 
+)
+returns int
+as 
+begin
+	return 
+	(	select	count(1)
+		from	[dbo].[test_child] tc
+				join [dbo].[test_parent] tp on tc.parent_id = tp.parent_id
+		where	tp.parent_uid = @parent_uid
+	)
+end
+go
+print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Scalar Function [dbo].[test_parent_get_child_qty] has been created.'
+go
+```
+## Log procedure simple
+``` sql
+if exists (select 1 where objectproperty( object_id('[dbo].[test_log_create_simple]'), 'IsProcedure') = 1)
+begin
+	drop procedure [dbo].[test_log_create_simple]
+	print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_log_create_simple] has been dropped.'
+end
+go
+
+create procedure  [dbo].[test_log_create_simple]
+(
+	@log_uid uniqueidentifier 
+,	@parent_id int 
+,	@child_id int 
+,	@procedure_name varchar(1000)
+,	@log_value varchar(max)
+,	@create_date datetime
+,	@error_strategy varchar(100) = 'no_error'
+)
+as 
+begin
+	set nocount on; 
+
+	insert into [dbo].[test_log]
+	(
+		[log_uid]
+	,	[parent_id]
+	,	[child_id]
+	,	[procedure_name]
+	,	[log_value]
+	,	[create_date]
+	)
+	select	@log_uid
+		,	@parent_id
+		,	@child_id
+		,	@procedure_name
+		,	@log_value
+		,	@create_date
+	;
+
+	return 0;
+end
+go
+print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_log_create_simple] has been created.'
+go
+```
+## Test case - without logging - simple
+```sql
+if exists (select 1 where objectproperty( object_id('[dbo].[test_parent_set_child_qty]'), 'IsProcedure') = 1)
+begin
+	drop procedure [dbo].[test_parent_set_child_qty]
+	print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_parent_set_child_qty] has been dropped.'
+end
+go
+
+create procedure  [dbo].[test_parent_set_child_qty]
+(
+	@parent_uid uniqueidentifier
+,	@error_strategy varchar(100) = 'no_error'
+)
+as 
+begin
+	set nocount on;
+
+	update	tp
+	set		tp.child_qty = [dbo].[test_parent_get_child_qty](@parent_uid)
+		,	tp.modify_date = getdate()
+	from	[dbo].[test_parent] tp 
+	where	tp.parent_uid = @parent_uid
+	;
+
+	return 0;
+end
+go
+print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_parent_set_child_qty] has been created.'
+go
+```
