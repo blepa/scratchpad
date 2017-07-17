@@ -306,6 +306,81 @@ go
 ```
 ## Test case - without logging - simple
 ```sql
+
+if exists (select 1 where objectproperty( object_id('[dbo].[test_parent_create_simple]'), 'IsProcedure') = 1)
+begin
+	drop procedure [dbo].[test_parent_create_simple]
+	print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_parent_create_simple] has been dropped.'
+end
+go
+
+create procedure  [dbo].[test_parent_create_simple]
+(
+	@parent_uid uniqueidentifier
+,	@error_strategy varchar(100) = 'no_error'
+)
+as 
+begin
+	set nocount on;
+
+	insert into [dbo].[test_parent]
+	(
+		[parent_uid]
+	,	[child_qty]
+	,	[create_date]
+	,	[modify_date]
+	)
+	select	@parent_uid
+		,	0
+		,	getdate()
+		,	getdate()
+	;
+
+	return 0;
+end
+go
+
+print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_parent_create_simple] has been created.'
+go
+
+
+if exists (select 1 where objectproperty( object_id('[dbo].[test_child_create_simple]'), 'IsProcedure') = 1)
+begin
+	drop procedure [dbo].[test_child_create_simple]
+	print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_child_create_simple] has been dropped.'
+end
+go
+
+create procedure  [dbo].[test_child_create_simple]
+(
+	@parent_uid uniqueidentifier
+,	@child_uid uniqueidentifier 
+,	@error_strategy varchar(100) = 'no_error'
+)
+as 
+begin
+	set nocount on;
+
+	insert into [dbo].[test_child]
+	(
+		[child_uid]
+	,	[parent_id]
+	,	[create_date]
+	,	[modify_date]
+	)
+	select	@child_uid
+		,	[dbo].[test_parent_get_parent_id](@parent_uid)
+		,	getdate()
+		,	getdate()
+	;
+
+	return 0;
+end
+go
+print convert(varchar(23), getdate(), 121) + ' - ' + '[' + @@servername + '].[' + db_name() + ']' + ' - ' + 'Procedure [dbo].[test_child_create_simple] has been created.'
+go
+
+
 if exists (select 1 where objectproperty( object_id('[dbo].[test_parent_set_child_qty]'), 'IsProcedure') = 1)
 begin
 	drop procedure [dbo].[test_parent_set_child_qty]
