@@ -1,0 +1,21 @@
+Pani Beato,
+
+Poniżej odpowiedzi na pytania.
+
+Co do technologii w których pracuję lub pracowałem szczegóły znajdzie Pani w CV (dodaje do załącznika).
+
+1. Subversion
+	Miałem styczność z CVS, SVN, GIT - pracowałem z różnymi systemami do kontroli wersji w zależności od projektu
+2. Tworzenie funkcjonalności w oparciu o rozwiązania BI
+	Business Object - nie miałem styczności, BI Publisher - nie miałem styczności. 
+	Narzędzia z których korzystałem to SQL Server Integration Services oraz SQL Server Reporting Services.
+	SQL Server Integration Services - projekt zasilania baz raportowych danymi z baz transakcyjnych
+	SQL Server Reporting Services - tworzenie raportów
+3. Optymalizacja zapytań SQL
+	Poprawa wydajności SQL Server po przez zmiany zapytań, edycje indeksów, zmiany schematu bazy danych.
+4. Analiza wydajności baz danych
+	Po przez testowanie, używanie np. narzędzia JMeter. Analiza wydajności na podstawie widoków systemowych oraz danych zbieranych przez narzędzia do monitoringu.
+5. Znajomość problematyki baz danych
+	W ramach projektów na którymi pracowałem głównie wykorzystywałem SQL Server do tworzenia struktur bazodanowych oraz implementacji logiki biznesowej.
+6.	Wiedza z zakresu optymalizacji zapytań.
+	Tak optymalizowałem zapytania - SQL Server.
