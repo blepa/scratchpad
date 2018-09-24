@@ -5,3 +5,6 @@ GAM pages track if an extent is in use. SGAM pages indicate if an extent is a sh
 
 ## GAM Extent ##
 IAM Pages are on demand pages and are associated with an allocation unit. As such, they do not have a fixed position within the database file. GAM, SGAM, DIFF and ML pages on the other hand all live in a special extent, the GAM extent. The GAM extent is always the first extent of a GAM interval. The GAM extent for the first GAM interval in each database file contains two additional pages. Page 0 in every file is always a File Header Page. Page 1 is always the first PFS page. All other GAM extents contain only the before mentioned four pages. The remaining pages in a GAM extent are unused as of SQL Server 2012.
+
+
+https://www.red-gate.com/simple-talk/sql/learn-sql-server/effective-clustered-indexes/
