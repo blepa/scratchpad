@@ -60,3 +60,13 @@ where	id > 100
 select	id
 from	dbo.HeapWithIndex
 where	id > 100
+
+/*
+drop index  IX_HeapWithIndex_id on dbo.HeapWithIndex
+
+create nonclustered index IX_HeapWithIndex_id_include on dbo.HeapWithIndex(id) include (value_01,uuid)
+
+select	* 
+from	dbo.HeapWithIndex
+where	id > 100
+*/
