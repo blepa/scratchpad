@@ -35,9 +35,9 @@ The project focused on an extension of functionality of front-end application to
 *team size: 3* 
 
 **Database Monitoring**  
-*role: developer* 
+*role: developer*  
 *tech stack: sql server 2008, extent event*  
-*team size: 1* 
+*team size: 1*  
 
 **Integration CRM**
 *role: developer*  
