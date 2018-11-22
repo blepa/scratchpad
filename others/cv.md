@@ -28,11 +28,11 @@ The project focused on an extension of functionality of front-end application to
 - Provided 24X7 production systems on call support.  
 
 **Projects**:  
-**Push Interface**  
+**Push Messages**  
 *role: database architect/developer*  
 *tech stack: sql server 2008, web-services, test framework tsqlt*  
 *team size: 3*  
-Push Interface is the module that allows sending message to clients in batch processing. The main responsibility is reducing waiting times for delivery message. I designed and implemented database objects for store and push 100k messages per hour and pull message status from external systems.
+Push Messages is the module that allows sending message to clients in batch processing. The main responsibility is reducing waiting times for delivery message. I designed and implemented database objects for store and push 100k messages per hour and pull message status from external systems.
 
 **Database Monitoring**  
 *role: developer*  
