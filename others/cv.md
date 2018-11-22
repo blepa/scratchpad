@@ -38,7 +38,7 @@ Push Interface is the module that allows sending message to clients in batch pro
 *role: developer*  
 *tech stack: sql server 2008, xevents, xml*  
 *team size: 1*  
-This module provides a way of collecting data from extending events and system views about server and OLTP performance. I developed a tool for get information about deadlocks, waits and collect a value of performance counters. This solution helping with investigate performacne problems.
+This module provides a way of collecting data from extending events and system views about server and database performance. I developed a tool for get information about deadlocks, waits and collect a value of performance counters. This solution helping with investigate performacne problems.
 
 **DCMS Integration**  
 *role: developer*  
