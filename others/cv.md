@@ -32,16 +32,18 @@ The project focused on an extension of functionality of front-end application to
 *role: database architect/developer*  
 *tech stack: sql server 2008, web-services, test framework tsqlt*  
 *team size: 3*  
-Push Interface is the module that allows sending message to clients in batch processing. The main responsibility is reducing waiting times for delivery message. I designed and implemented database objects for store and push message 100k message per hour.
-
+Push Interface is the module that allows sending message to clients in batch processing. The main responsibility is reducing waiting times for delivery message. I designed and implemented database objects for store and push message 100k messages per hour.
 
 **Database Monitoring**  
 *role: developer*  
-*tech stack: sql server 2008, extent event*  
+*tech stack: sql server 2008, xevents, xml*  
 *team size: 1*  
+This module provides a way of collecting data from extending events and system views about server and OLTP performance. I developed a tool for get information about deadlocks, waits and collect a value of performance counters. This solution helping with investigate performacne problems.
 
-**Integration CRM**  
+**DCMS Integration**  
 *role: developer*  
-*tech stack: sql server 2008, 
-*services, xml*  
+*tech stack: sql server 2008, web-services, xml, test framework tsqlt, jmeter*  
 *team size: 8*  
+In this project I developed many xml web-services based on stored procedures for front-end applictaions. I concentrated on standardized output from two impedented databases with diffrent data model structure. The next important aspect which I focused is perfomrance of stored procedures.
+
+
