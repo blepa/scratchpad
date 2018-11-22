@@ -8,13 +8,12 @@
 **Projects**:
 **Data Security Layer**  
 *role: architect/developer*    
-*tech stack: sql server 2014/2008, service broker, ssis, db2 warehouse, schedule-in*  
+*tech stack: sql server 2014/2012/2008, service broker, ssis, db2 warehouse, schedule-in*  
 *team size: 5*  
 
 This project provides a tool for preventing unauthorized users from viewing sensitive data. The core component meets the requirements of data access control, masking data and keys integrity. This solution helps one way synchronize data between production and developer environments. 
 
-*Metadata Management*
-
+**Metadata Management**
 *role: developer/tester*  
 *tech stack: sql server 2014, db2 warehouse*  
 *team size: 3*  
@@ -31,8 +30,10 @@ The project focused on an extension of functionality of front-end application to
 **Projects**:  
 **Push Interface**  
 *role: database architect/developer*  
-*tech stack: sql server 2008*  
+*tech stack: sql server 2008, web-services, test framework tsqlt*  
 *team size: 3*  
+Push Interface is the module that allows sending message to clients in batch processing. The main responsibility is reducing waiting times for delivery message. I designed and implemented database objects for store and push message 100k message per hour.
+
 
 **Database Monitoring**  
 *role: developer*  
@@ -41,5 +42,6 @@ The project focused on an extension of functionality of front-end application to
 
 **Integration CRM**  
 *role: developer*  
-*tech stack: sql server 2008, web-services, xml*  
+*tech stack: sql server 2008, 
+*services, xml*  
 *team size: 8*  
