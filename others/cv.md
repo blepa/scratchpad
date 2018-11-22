@@ -30,16 +30,16 @@ The project focused on an extension of functionality of front-end application to
 
 **Projects**:  
 **Push Interface**  
-*role: database architect/developer* 
-*tech stack: sql server 2008* 
-*team size: 3* 
+*role: database architect/developer*  
+*tech stack: sql server 2008*  
+*team size: 3*  
 
 **Database Monitoring**  
 *role: developer*  
 *tech stack: sql server 2008, extent event*  
 *team size: 1*  
 
-**Integration CRM**
+**Integration CRM**  
 *role: developer*  
 *tech stack: sql server 2008, web-services, xml*  
 *team size: 8*  
