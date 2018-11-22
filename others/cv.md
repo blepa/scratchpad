@@ -6,7 +6,7 @@
 - Creating documents whose describe data warehouse modules.  
 Projects:
 
-*Data Security Layer*
+**Data Security Layer**  
 _role: architect/developer_  
 _tech stack: sql server 2014/2008, service broker, ssis, db2 warehouse, schedule-in_  
 _team size: 5_    
