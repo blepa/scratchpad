@@ -46,4 +46,9 @@ This module provides a way of collecting data from extending events and system v
 *team size: 8*  
 In this project I developed many xml web-services based on stored procedures for front-end applictaions. I concentrated on standardized output from two impedented databases with diffrent data model structure. The next important aspect which I focused is perfomrance of stored procedures.
 
+**Push data from OLTP to Raporting Server**  
+*role: desinger/developer** 
+*tech stack: sql server 2008/2012/2014/2016, sql server replication, ssis, linked server**
+*team size: 2*
+The main requirements for this project are reduce time and resources consuption of the data extract process. To meet those requirements I extensive used SSIS package. 
 
