@@ -20,7 +20,7 @@ This project provides a tool for preventing unauthorized users from viewing sens
 
 The project focused on an extension of functionality of front-end application to manage metadata for business users. I developed additions such as automate generate application templates, two-way synchronize data between the application database and the data warehouse and history of row changes.
 
-**Responsibilities**:
+**Responsibilities**:  
 - Created and designed database solutions for OLTP which requires high performance.  
 - Investigated and resolved SQL Server performance issues.  
 - Developed business logic using the SQL Server technologies stack.  
@@ -32,7 +32,7 @@ The project focused on an extension of functionality of front-end application to
 *role: database architect/developer*  
 *tech stack: sql server 2008, web-services, test framework tsqlt*  
 *team size: 3*  
-Push Interface is the module that allows sending message to clients in batch processing. The main responsibility is reducing waiting times for delivery message. I designed and implemented database objects for store and push message 100k messages per hour.
+Push Interface is the module that allows sending message to clients in batch processing. The main responsibility is reducing waiting times for delivery message. I designed and implemented database objects for store and push 100k messages per hour and pull message status from external systems.
 
 **Database Monitoring**  
 *role: developer*  
