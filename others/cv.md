@@ -1,19 +1,15 @@
-Responsibilities:
-
-Proposing technical feasibility solutions for new functional designs.
-Recommending options for performance improvement of database objects.
-Building and improvement modules for data analytics warehouse.
-Designing and implementing release management solution for data warehouse components.
-Creating documents whose describe data warehouse modules.
+*Responsibilities*:  
+- Proposing technical feasibility solutions for new functional designs.  
+- Recommending options for performance improvement of database objects.  
+- Building and improvement modules for data analytics warehouse.  
+- Designing and implementing release management solution for data warehouse components.  
+- Creating documents whose describe data warehouse modules.  
 Projects:
 
-Data Security Layer 
-
-role: architect/developer
-
-tech stack: sql server 2014/2008, service broker, ssis, db2 warehouse, schedule-in
-
-team size: 5
+*Data Security Layer*
+_role: architect/developer_  
+_tech stack: sql server 2014/2008, service broker, ssis, db2 warehouse, schedule-in_  
+_team size: 5_    
 
 This project provides a tool for preventing unauthorized users from viewing sensitive data. The core component meets the requirements of data access control, masking data and keys integrity. This solution helps one way synchronize data between production and developer environments. 
 
