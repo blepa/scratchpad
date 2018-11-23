@@ -5,6 +5,7 @@
 - Building and improvement modules for data analytics warehouse. 
 - Designing and implementing a release management solution for data warehouse components.  
 - Creating documents whose describe data warehouse modules.  
+
 **Projects**:  
 Data Security Layer  
 *role: architect/developer*  
