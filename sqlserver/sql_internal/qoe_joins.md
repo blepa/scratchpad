@@ -1,7 +1,6 @@
-#JOINS#
+# JOINS
 
-
-##Nested Loop Join##
+## Nested Loop Join
 
 Two inputs: *outer* and *inner* tables  
 
@@ -24,5 +23,5 @@ for each row R1 in outer table
 **Best use case**: 
 Small inputs. Preferable with index on join key in inner table.  
 
-##Merge Join##  
+## Merge Join
 
