@@ -10,10 +10,18 @@ Moving that people do not notice.
 **suburb**  
 An area or town near a large city but away from its centre, where there are many houses, especially for middle-class people.  
 **repossess**  
-to take back something that someone had promised to pay you for over a period of time because they are unable to continue paying you for it  
+To take back something that someone had promised to pay you for over a period of time because they are unable to continue paying you for it.  
 **hooked up**  
- to connect something to a piece of equipment, especially using a hook  
- 
+To connect something to a piece of equipment, especially using a hook.  
+**interest rates**  
+The percentage that an institution such as a bank charges or pays you in interest when you borrow money from it.   
+**payout**  
+A large amount of money paid to someone, for example by an insurance company or as a prize in a competition.  
+**delinquent**  
+Someone who is delinquent in paying their taxes or bills fails to pay the money that they owe.  
+**ivory tower**  
+The situation of someone whose important job or social position protects them from the practical or unpleasant things that exist in most people’s lives
+
 ## Transcript ##
 UNIDENTIFIED PERSON: This is PLANET MONEY from NPR.
 
@@ -71,7 +79,7 @@ MALONE: We were out with Larry because we wanted to see, on the ground, what is 
 
 VARATHAN: For one, we know that car prices are rising, and they're rising faster than people's incomes.
 
-MALONE: But also, interest rates are low right now. Investors, i.e. Wall Street types, are fishing for creative ways to get better returns. They are bundling and buying car loans. The riskier the car loan, the bigger the payout, but also, the better the chance that somebody just stops paying that loan, like the owner of the black Chevy Cruze that is getting **`hooked up`** on the back of Larry Baker's tow truck.
+MALONE: But also, **`interest rates`** are low right now. Investors, i.e. Wall Street types, are fishing for creative ways to get better returns. They are bundling and buying car loans. The riskier the car loan, the bigger the **`payout`**, but also, the better the chance that somebody just stops paying that loan, like the owner of the black Chevy Cruze that is getting **`hooked up`** on the back of Larry Baker's tow truck.
 
 So you're 100% sure this is the right car?
 
@@ -109,7 +117,7 @@ BAKER: What'd you study?
 
 BAKER: Economics.
 
-MALONE: Today, we are following the life cycle of a delinquent car loan. We have three characters with three stories. And they are not related in real life, but they are part of this same basic story that is happening over and over when a car is repossessed. So just know, not related stories, but we will be cutting in and out of them over the course of the next three chapters.
+MALONE: Today, we are following the life cycle of a **`delinquent`** car loan. We have three characters with three stories. And they are not related in real life, but they are part of this same basic story that is happening over and over when a car is repossessed. So just know, not related stories, but we will be cutting in and out of them over the course of the next three chapters.
 
 VARATHAN: Chapter 1 - The Salesman.
 
@@ -123,9 +131,9 @@ MALONE: Oh, OK, I see. I got it.
 
 Rick Ricart, like his father before him and his father before him, runs Ricart Automotive, founded in the 1950s near Columbus Ohio. And as a third-generation car salesman, Rick talks in this great, old-timey car lot jargon - Ph. D, for example, but also towers.
 
-VARATHAN: That's where the sales directors sit, thinking about credit scores and loan approvals...
+VARATHAN: That's where the sales directors sit, thinking about `credit score`s and `loan approvals`...
 
-MALONE: ...What kind of car a customer will actually be able to buy. And while the salesmen are on the lot with customers, sales directors are running numbers up in their ivory towers.
+MALONE: ...What kind of car a customer will actually be able to buy. And while the salesmen are on the lot with customers, sales directors are running numbers up in their **`ivory towers`**.
 
 RICART: They don't sit above everyone else anymore and look down.
 
@@ -159,7 +167,7 @@ RICART: We do what's called the Columbo, where, as you're walking...
 
 RICART: ...Around the lot to look at cars, you turn back over your shoulder and you say, and by the way, we have guaranteed credit approval if that's something you think you may need.
 
-MALONE: Why is that the Columbo?
+MALONE: Why is that the Col umbo?
 
 RICART: It's from the old TV show "Columbo". That's what the sales trainers have called it for years. It's that kind of, like, look over the shoulder and give that squinty-eyed, by the way, I, you know, noticed this. It's kind of a smooth way - they just call it the Columbo.
 
