@@ -1,5 +1,7 @@
 # M7.1 - Probability, may, might, could #
 
+[Online Oxford English: English Modal Verbs - May, Might, Could, Can - Talking About Possibilities](https://www.youtube.com/watch?v=FMGxeChtYLc)
+
 We use **`may`**, **`might`** and **`could`** to represent events having possibility to take place in the **present** and **future**.
 
 ## May - Might ##
@@ -34,6 +36,6 @@ In general **`could`**  is considered more polite (or formal) thah **`can`**.
 |**Possibility**|**Possibility in the past**|
 |It **`can`** get very cold there at night.|What? You **`could`** have broken your leg.|
 |**Offer to help someone**|**Suggestion (when asked what to do)**|
-|**`Can`** i carry your bags for you?|We **`could`** go to the movies if ypu like.|
+|**`Can`** i carry your bags for you?|We **`could`** go to the movies if you like.|
 |**Cannot (can't) = not allowed**|**Condition of Can (would be able to)**|
 |You **`cannot`** smoke in this room.|If we had some oranges I **`could`** make you some fresh juice.|
