@@ -25,7 +25,7 @@ When expressing **wishes** or giving **permission**, only **`may`** is used.
 ## Can - Could ##
 In general **`could`**  is considered more polite (or formal) thah **`can`**.
 
-|CAN|COULD|
+|**CAN**|**COULD**|
 |---|-----|
 |**General ability (present)**|**General ability in the past**|
 |I **`can`** speak English.|I **`could`** play the piano when I was younger.|
