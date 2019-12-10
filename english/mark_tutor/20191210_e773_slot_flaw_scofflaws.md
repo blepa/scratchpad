@@ -4,7 +4,7 @@ link [Episode 773: Slot Flaw Scofflaws](https://www.npr.org/2019/12/04/784799724
 **slot machine**  
 A machine that you put money into in order to play a game.  
 **situation room**  
-A room at a organization headquarters where the latest information on a organization is channeled. 
+A room at a organization headquarters where the latest information on a organization is channeled.   
 **rip off**  
 Cheat or steal from someone.  
 
