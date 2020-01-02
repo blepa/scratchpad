@@ -32,12 +32,12 @@ from n3;
 
 select	au.* 
 from	sys.allocation_units au
-		join sys.partitions p on au.container_id = p.partition_id
+join 	sys.partitions p on au.container_id = p.partition_id
 where	p.object_id = object_id('dbo.allocation_unit_demo_in_row_data'); 
 
 select	au.* 
 from	sys.system_internals_allocation_units au
-		join sys.partitions p on au.container_id = p.partition_id
+join 	sys.partitions p on au.container_id = p.partition_id
 where	p.object_id = object_id('dbo.allocation_unit_demo_in_row_data'); 
 
 -- select len(col_varchar_1000) len_col_varchar_1000, len(col_varchar_5000) col_varchar_5000, * from dbo.allocation_unit_demo_in_row_data 
