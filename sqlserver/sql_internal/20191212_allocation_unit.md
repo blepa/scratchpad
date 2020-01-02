@@ -41,4 +41,59 @@ join 	sys.partitions p on au.container_id = p.partition_id
 where	p.object_id = object_id('dbo.allocation_unit_demo_in_row_data'); 
 
 -- select len(col_varchar_1000) len_col_varchar_1000, len(col_varchar_5000) col_varchar_5000, * from dbo.allocation_unit_demo_in_row_data 
+```  
+  
+```sql
+-- all types of allocation unit
+-- in_row_data:			a row fits on single page, row is not bigger than 8kb.
+-- row_overflow_data:	the rows in total pass the *kn size, but the size of every individual column is less than 8kb.
+-- lob_data:			a individual column size is more than 8kb.
+if exists (select 1 where objectproperty(object_id('dbo.allocation_unit_demo_all_types'), 'IsTable') = 1) 
+drop table dbo.allocation_unit_demo_all_types;
+go
+create table dbo.allocation_unit_demo_all_types 
+(
+	col_in_row_data varchar(3000)
+,	col_row_overflow_data varchar(7000)
+,	col_lob_data varbinary(max)
+);
+go
+-- in_row_data
+;with 
+n1(c) as ( select 0 union all select 0),
+n2(c) as ( select 0 from n1 as t1 cross join n1 as t2)
+insert into dbo.allocation_unit_demo_all_types(col_in_row_data) 
+select 
+convert(varchar(3000),crypt_gen_random(abs(cast(cast(newid() as varbinary(36)) as int)) % 3000, null),2)
+from n2;
+-- row_overflow_data
+;with 
+n1(c) as ( select 0 union all select 0),
+n2(c) as ( select 0 from n1 as t1 cross join n1 as t2)
+insert into dbo.allocation_unit_demo_all_types(col_in_row_data, col_row_overflow_data) 
+select 
+convert(varchar(3000),crypt_gen_random(3000, null),2),
+convert(varchar(7000),crypt_gen_random(7000, null),2)
+from n2;
+-- lob_data
+;with 
+n1(c) as ( select 0 union all select 0),
+n2(c) as ( select 0 from n1 as t1 cross join n1 as t2)
+insert into dbo.allocation_unit_demo_all_types(col_lob_data) 
+select 
+convert(varbinary(max),crypt_gen_random(8000, null),2) + convert(varbinary(max),crypt_gen_random(5000, null),2) 
+from n2;
+
+select	au.* 
+from	sys.allocation_units au
+join 	sys.partitions p on au.container_id = p.partition_id
+where	p.object_id = object_id('dbo.allocation_unit_demo_all_types'); 
+
+select	allocation_unit_type_desc, allocated_page_page_id, page_type, page_type_desc , allocated_page_iam_page_id
+from	sys.dm_db_database_page_allocations(db_id(),object_id('dbo.allocation_unit_demo_all_types'),null,null,'DETAILED')
+where	is_allocated = 1;
+
+/*
+select len(col_in_row_data) + isnull(len(col_row_overflow_data),0) len_for_overflow_data, len(col_lob_data) len_col_lob_data from dbo.allocation_unit_demo_all_types
+*/
 ```
