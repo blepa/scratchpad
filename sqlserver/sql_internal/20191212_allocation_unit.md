@@ -8,8 +8,7 @@
 
 Demo:
 ```sql
--- in_row_data: 
--- a row fits on single page, row is not bigger than 8kb.
+-- in_row_data: a row fits on single page, row is not bigger than 8kb.
 if exists (select 1 where objectproperty(object_id('dbo.allocation_unit_demo_in_row_data'), 'IsTable') = 1) 
 drop table dbo.allocation_unit_demo_in_row_data;
 go
@@ -45,9 +44,9 @@ where	p.object_id = object_id('dbo.allocation_unit_demo_in_row_data');
   
 ```sql
 -- all types of allocation unit
--- in_row_data:			a row fits on single page, row is not bigger than 8kb.
--- row_overflow_data:	the rows in total pass the *kn size, but the size of every individual column is less than 8kb.
--- lob_data:			a individual column size is more than 8kb.
+-- in_row_data:		a row fits on single page, row is not bigger than 8kb.
+-- row_overflow_data:	the rows in total pass the 8kb size, but the size of every individual column is less than 8kb.
+-- lob_data:		a individual column size is more than 8kb.
 if exists (select 1 where objectproperty(object_id('dbo.allocation_unit_demo_all_types'), 'IsTable') = 1) 
 drop table dbo.allocation_unit_demo_all_types;
 go
