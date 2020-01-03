@@ -1,5 +1,7 @@
 # Allocation Unit #
 
+[pic01]: https://github.com/blepa/scratchpad/blob/master/sqlserver/sql_internal/pic/allocate_unit.png
+
 [sqlity.net: The Allocation Unit](https://sqlity.net/en/2287/allocation-unit/)  
 [docs.microsoft: Table and Index Organization](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms189051(v=sql.105)?redirectedfrom=MSDN)  
 [medium.com/@idanmashi: SQL Server — Part 1 Files and Basics of Data Structure](https://medium.com/@idanmashi/sql-server-part-1-5811daebdeba)  
@@ -94,3 +96,5 @@ where	is_allocated = 1;
 
 --select len(col_in_row_data) + isnull(len(col_row_overflow_data),0) len_for_overflow_data, len(col_lob_data) len_col_lob_data from dbo.allocation_unit_demo_all_types
 ```
+
+![pic01]
