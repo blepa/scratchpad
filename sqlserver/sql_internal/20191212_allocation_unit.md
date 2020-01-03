@@ -96,6 +96,8 @@ select	allocation_unit_type_desc, allocated_page_page_id, page_type, page_type_d
 from	sys.dm_db_database_page_allocations(db_id(),object_id('dbo.allocation_unit_demo_all_types'),null,null,'DETAILED')
 where	is_allocated = 1;
 
+select * from sys.dm_db_index_physical_stats(db_id(),object_id('dbo.allocation_unit_demo_all_types'),0,null,'DETAILED')
+
 --select len(col_in_row_data) + isnull(len(col_row_overflow_data),0) len_for_overflow_data, len(col_lob_data) len_col_lob_data from dbo.allocation_unit_demo_all_types
 ```
 
