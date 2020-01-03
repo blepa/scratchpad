@@ -1,6 +1,6 @@
 # Allocation Unit #
 
-[pic01]: https://github.com/blepa/scratchpad/blob/master/sqlserver/sql_internal/pic/allocate_unit.png
+[pic01]: https://github.com/blepa/scratchpad/blob/master/sqlserver/sql_internal/pic/allocate_unit_diagram.png
 
 [sqlity.net: The Allocation Unit](https://sqlity.net/en/2287/allocation-unit/)  
 [docs.microsoft: Table and Index Organization](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms189051(v=sql.105)?redirectedfrom=MSDN)  
