@@ -8,7 +8,7 @@
 [docs.microsoft: Pages and Extents Architecture Guide](https://docs.microsoft.com/en-us/sql/relational-databases/pages-and-extents-architecture-guide?view=sql-server-ver15)  
 [sqlservercentral.com: SQL Server : Understanding the IAM Page](https://www.sqlservercentral.com/blogs/sql-server-understanding-the-iam-page)  
 
-Allocation units are used for grouping all pages into logical units belong to a single partition of a single table. Information about the data page belonging to the table is not store in this data page. 
+Allocation units are used for grouping all pages into logical units belong to a single partition of a single table. Information about the data page belonging to the table is not store in this data page but in Index Allocation Map (IAM) page.
 
 Demo:
 ```sql
