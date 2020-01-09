@@ -2,6 +2,9 @@
 
 In the early 1980s, Kuwait's unofficial stock market - run out of a parking garage on the site of an old camel market - was the third largest in the world, second only to the U.S and Japan. But then, in an instant, it all came crashing down, plunging Kuwait into a brutal recession that would last for nearly a decade. How is it thata simple financial innovation could create such vast wealth and such devastating chaos? And what can it teach us about the fundamental forces at the heart of modern captalism?
 
+Late 1970's - Kuwait's golden era - massive influx of oil money - big income from oil sales - become the financial center of the Middle East   
+Official stock market was very tightly regulated
+
 ## Transcript ##
 CARDIFF GARCIA, HOST:
 
@@ -11,15 +14,15 @@ DARIUS RAFIEYAN, BYLINE: Hi, Cardiff. Yes. Today, I've got a story for you about
 
 GARCIA: Kuwait.
 
-RAFIEYAN: Yes. And this story begins in the late 1970s, during what is known as Kuwait's golden era. So, you know, Kuwait had been this kind of sleepy desert outpost, and then due to the massive influx of oil money, it became this, like, bustling metropolis. And I actually talked to a man named Sabah al-Rayes (ph), who was a prominent businessman in Kuwait around this time, and he talks about what Kuwait looked like when he was a kid growing up.
+RAFIEYAN: Yes. And this story begins in the late 1970s, during what is known as Kuwait's golden era. So, you know, Kuwait had been this kind of sleepy desert outpost, and then due to the **massive influx of oil money**, it became this, like, bustling metropolis. And I actually talked to a man named Sabah al-Rayes (ph), who was a prominent businessman in Kuwait around this time, and he talks about what Kuwait looked like when he was a kid growing up.
 
-SABAH AL-RAYES: Hardly had any electricity. We did not have running water. We did not have any infrastructure. There were no air conditioning, for example. There were no elevators.
+SABAH AL-RAYES: Hardly had any **electricity**. We did not have **running water**. We did not have any **infrastructure**. There were no **air conditioning**, for example. There were no **elevators**.
 
-RAFIEYAN: And by the late 1970s, Kuwait had become this modern metropolis. And it had also become the financial center of the Middle East because the region was rocked by turmoil at this point, and Kuwait, with its really well-regulated financial sector and its relatively stable political climate, became this magnet for all of this money that was fleeing turmoil elsewhere in the region.
+RAFIEYAN: And by the late 1970s, Kuwait had become this modern metropolis. And it had also become the **financial center** of the Middle East because the region was rocked by turmoil at this point, and Kuwait, with its really **well-regulated financial sector** and its relatively **stable political climate**, became this magnet for all of this money that was fleeing turmoil elsewhere in the region.
 
 GARCIA: Yeah, it sounds like a pretty classic emerging market story. It starts doing some things right, and then all this money starts coming in from other places.
 
-RAFIEYAN: And obviously, that drove up prices in Kuwait's official stock market. But it was very, very tightly regulated. You know, there were lots of regulations about what kinds of companies could be listed there, who was allowed to invest, how are they allowed to invest. And that made it very stable, but it also made it kind of a boring place to invest, you know.
+RAFIEYAN: And obviously, that drove up prices in Kuwait's official stock market. But it was very, very **tightly regulated**. You know, there were lots of regulations about what kinds of companies **could be listed** there, who was **allowed to invest**, how are they allowed to invest. And that made it very stable, but it also made it kind of a **boring place to invest**, you know.
 
 GARCIA: And meanwhile, there's all this money that wants to invest in Kuwaiti companies. And if it can't do it there, maybe it'll find some other way to invest in them.
 
@@ -27,15 +30,15 @@ RAFIEYAN: Well...
 
 GARCIA: (Laughter).
 
-RAFIEYAN: ...It did find another way. Basically, right across the street from the official Kuwaiti stock market, a sort of informal, unofficial stock market developed. It was known as the Souk al-Manakh, and it was literally in a air-conditioned parking garage on the site of the old camel market. And Souk al-Manakh literally translates to the market at the place where the camels rest. Traders started gathering there and trading stocks amongst each other.
+RAFIEYAN: ...It did find another way. Basically, right across the street from the official Kuwaiti stock market, a sort of informal, **unofficial stock market developed**. It was known as the **Souk al-Manakh**, and it was literally in a air-conditioned parking garage on the site of the **old camel market**. And Souk al-Manakh literally translates to the market at the place where the camels rest. Traders started **gathering** there and trading stocks amongst each other.
 
 And I spoke to Ben Craig, who is a economic and policy adviser for the Federal Reserve Bank of Cleveland, and he's written a lot about the Souk al-Manakh. And I have to clarify here that everything he said in our interview only represents his personal views; he doesn't represent the views of the Federal Reserve. But I talked to him about this sort of informal market that developed.
 
-BEN CRAIG: It was seen as an area where you could have fun, but what plays in the souk stays in the souk.
+BEN CRAIG: It was seen as an area where you could have fun, but **what plays in the souk stays in the souk**.
 
 GARCIA: I don't think I've heard that one before.
 
-RAFIEYAN: (Laughter) Well, basically, the government said, hey, we like having this innovative, kind of risky market with big returns, but we don't want the risk to infect the rest of the economy. So they put all these rules in place that said banks are not allowed to touch the souk. They can't lend money to people who are investing there. It's got to be completely cut off from the financial sector.
+RAFIEYAN: (Laughter) Well, basically, the government said, hey, we like having this innovative, kind of **risky market** with big returns, but we don't want the risk to infect the rest of the economy. So they put all these rules in place that said **banks are not allowed to touch the souk**. They can't lend money to people who are investing there. It's got to be completely **cut off** from the financial sector.
 
 But, you know, of course, traders don't like this because they don't want to just trade with the money they have in their pocket; they want to borrow money and, you know, potentially get even higher returns. And so this system developed between the traders and the souk that I think was a little bit ingenious. They couldn't borrow money from the bank, so what they did is they had this system of writing postdated checks.
 
