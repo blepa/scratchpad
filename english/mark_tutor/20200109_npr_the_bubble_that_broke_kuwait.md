@@ -1,5 +1,8 @@
 # The Bubble That Broke Kuwait #
 
+In the early 1980s, Kuwait's unofficial stock market - run out of a parking garage on the site of an old camel market - was the third largest in the world, second only to the U.S and Japan. But then, in an instant, it all came crashing down, plunging Kuwait into a brutal recession that would last for nearly a decade. How is it thata simple financial innovation could create such vast wealth and such devastating chaos? And what can it teach us about the fundamental forces at the heart of modern captalism?
+
+## Transcript ##
 CARDIFF GARCIA, HOST:
 
 Hey, everyone. This is THE INDICATOR FROM PLANET MONEY. I'm Cardiff Garcia. And today, we are continuing our series on history's financial bubbles, and we've got a doozy for you today. I'm joined by Darius Rafieyan. Darius?
